@@ -1,0 +1,33 @@
+{
+  "name": "web-health-08-backend",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/GADS2020-WEB-HEALTH-08/WEB-HEALTH-08-BACKEND.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/GADS2020-WEB-HEALTH-08/WEB-HEALTH-08-BACKEND/issues"
+  },
+  "homepage": "https://github.com/GADS2020-WEB-HEALTH-08/WEB-HEALTH-08-BACKEND#readme",
+  "dependencies": {
+    "bcrypt": "^5.0.0",
+    "ejs": "^3.1.5",
+    "express": "^4.17.1",
+    "express-flash": "0.0.2",
+    "express-session": "^1.17.1",
+    "method-override": "^3.0.0",
+    "passport": "^0.4.1",
+    "passport-local": "^1.0.0"
+  },
+  "devDependencies": {
+    "dotenv": "^8.2.0",
+    "nodemon": "^2.0.6"
+  }
+}
