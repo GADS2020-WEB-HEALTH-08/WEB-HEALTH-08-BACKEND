@@ -11,6 +11,7 @@ const flash = require('express-flash');
 const session = require('express-session');
 const methodOverride = require('method-override');
 const mysql = require('mysql');
+const port = 5000;
 
 const initializePassport = require('./passport-config')
 initializePassport(
@@ -87,9 +88,12 @@ function checkAuthenticated(req, res, next) {
 
 function checkNotAuthenticated(req, res, next) {
   if (req.isAuthenticated()) {
-    return res.redirect('/');;
+    return res.redirect('/');
   }
   return next();
 }
 
-app.listen(3000);
+
+app.listen(port, () => {
+  console.log(`Example app listening at http://localhost:${port}`)
+})
